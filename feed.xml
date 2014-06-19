@@ -6,14 +6,14 @@
     <atom:link href="http://sguernion.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>jeu., 19 juin 2014 19:40:48 +0200</pubDate>
-    <lastBuildDate>jeu., 19 juin 2014 19:40:48 +0200</lastBuildDate>
+    <pubDate>jeu., 19 juin 2014 19:56:01 +0200</pubDate>
+    <lastBuildDate>jeu., 19 juin 2014 19:56:01 +0200</lastBuildDate>
 
     <item>
       <title>Mes premiers pas avec le Raspberry</title>
-      <link>http://sguernion.github.io//blog/2013/2013-03-07-raspberry.html</link>
+      <link>http://sguernion.github.io//2013/2013-03-07-raspberry.html</link>
       <pubDate>jeu., 7 mars 2013 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">blog/2013/2013-03-07-raspberry.html</guid>
+      <guid isPermaLink="false">2013/2013-03-07-raspberry.html</guid>
       	<description>
 	
 &lt;style type=&quot;text/css&quot;&gt;
@@ -51,9 +51,9 @@ span (font-family: Arial; font-size: 15px; vertical-align: baseline; white-space
     </item>
     <item>
       <title>Une Toile pas à pas</title>
-      <link>http://sguernion.github.io//blog/2012/2012-01-07-toile.html</link>
+      <link>http://sguernion.github.io//2012/2012-01-07-toile.html</link>
       <pubDate>sam., 7 janv. 2012 00:00:00 +0100</pubDate>
-      <guid isPermaLink="false">blog/2012/2012-01-07-toile.html</guid>
+      <guid isPermaLink="false">2012/2012-01-07-toile.html</guid>
       	<description>
 	
 &lt;style type=&quot;text/css&quot;&gt;
