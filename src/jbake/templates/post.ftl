@@ -5,19 +5,26 @@
 	<div class="page-header ${content.class}">
 		<h1><#escape x as x?xml>${content.title}</#escape></h1>
 	</div>
-
-	<div class="g-plusone" data-size="medium"></div>
 	
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="sguernion" data-lang="fr">Tweeter</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-	<p><em>${content.date?string("dd MMMM yyyy")}</em></p>
+	 <p class="post-info">
+  				<i class="fa fa-calendar-o"></i>&nbsp;
+				${content.date?string("dd MMMM yyyy")}
+				&nbsp;&nbsp;&nbsp;<i class="fa fa-bullhorn"></i>&nbsp;
+				<a href="${content.uri}#disqus_thread" data-disqus-identifier="${content.uri}">
+					${config.disqus_no_comments}
+				</a>
+	 </p>
+	 <#include "share-post.ftl">
 
 	<p>${content.body}</p>
 
 	<hr />
 	 <div id="disqus_thread"></div>
     <script type="text/javascript">
-        var disqus_shortname = 'sguernion'; // required: replace example with your forum shortname
+        var disqus_shortname = '${config.disqus_username}'; // required: replace example with your forum shortname
+		var disqus_identifier = '${content.uri}';
+		var disqus_title = "${content.title}";
+		var disqus_url = '${config.site_host}${content.uri}';
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
@@ -27,14 +34,4 @@
         })();
     </script>
   
-	
-	<script type="text/javascript">
-  window.___gcfg = {lang: 'fr'};
-
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/platform.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
 <#include "footer.ftl">
