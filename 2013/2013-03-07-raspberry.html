@@ -58,7 +58,8 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="../index.html"><i class="fa fa-home"></i> Home</a></li>
-			<li><a href="../galerie.html">Galerie</a></li>
+			<li><a href="../expositions.html">Galerie</a></li>
+			<li><a href="../projects.html">Projets</a></li>
 			
             <li><a href="../about.html">About</a></li>
             <li><a href="../feed.xml"><i class="fa fa-rss" alt="Flux RSS"></i></a></li>
@@ -76,13 +77,21 @@
 	<div class="page-header headercafe">
 		<h1>Mes premiers pas avec le Raspberry</h1>
 	</div>
-
-	<div class="g-plusone" data-size="medium"></div>
 	
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="sguernion" data-lang="fr">Tweeter</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-	<p><em>07 mars 2013</em></p>
-
+	 <p class="post-info">
+  				<i class="fa fa-calendar-o"></i>&nbsp;
+				07 mars 2013
+				&nbsp;&nbsp;&nbsp;<i class="fa fa-bullhorn"></i>&nbsp;
+				<a href="2013/2013-03-07-raspberry.html#disqus_thread" data-disqus-identifier="2013/2013-03-07-raspberry.html">
+					0 Comments
+				</a>
+	 </p>
+<div class="share-buttons share-buttons-post">
+	<div class="g-plusone" data-size="medium"></div>
+		
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="sguernion" data-lang="fr">Tweeter</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>	
 	<p>
 <style type="text/css">
 .textLeft {clear: both; text-align: left;}
@@ -100,26 +109,29 @@ span (font-family: Arial; font-size: 15px; vertical-align: baseline; white-space
 <br />
 <b id="internal-source-marker_0.6160945759620517" style="font-weight: normal;">
 <span>Il y a peu j'ai découvert le <a href="http://www.raspberrypi.org/">Raspberry</a>
- lors d'une conférence "</span>
+ lors d'une conférence<br/> "</span>
 <a href="http://www.breizhjug.org/2012/12/hard-is-back.html"><span>Hardware</span></a>
-<span>" au BreizhJug qui présentait quelques exemples d'application du Raspberry ou quelques autres cartes (Arduino,Beaglebone). Pour ceux que ça intéresse le BreizhJug organise prochainement une conférence dans lequel il sera question de l'utilisation du Raspberry. Aller sur le site du <a href="http://www.breizhjug.org/">BreizhJug </a>pour plus d'informations.</span>
+<span>" au BreizhJug qui présentait quelques exemples d'application du Raspberry ou quelques autres cartes (Arduino, Beaglebone). Pour ceux que ça intéresse le BreizhJug organise prochainement une conférence dans lequel il sera question de l'utilisation du Raspberry. Allez sur le site du <a href="http://www.breizhjug.org/">BreizhJug </a>pour plus d'informations.</span>
 <br /><br />
-<span>Ayant quelques idées d'utilisations de celle-ci et vu sont coût je me suis décidé a en commander une.</span>
+<span>Ayant quelques idées d'utilisations de celle-ci et vu sont coût je me suis décidé à en commander une.</span>
 <br />
 <br /><span>Premier cas d'utilisation, en faire un "Media center". Dès la réception de la Raspberry, installation de "<a href="http://www.raspbmc.com/wiki/user/">RaspBmc</a>" sur la carte SD. Branchement de la carte sur la télé, tout fonctionne du premier coup, même la télécommande de la télé est reconnue (grâce a la technologie </span>
 <a href="http://fr.wikipedia.org/wiki/High-Definition_Multimedia_Interface">
 <span style="color: #1155cc; font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">HDMI </span></a>
 <span>CEC).</span>
 <br />
-<br /><span>Je décide de brancher un disque dur 2.5" auto-alimenté par usb, et la problème cela fait rebouter la Raspberry. La carte ne semble pas suffisamment puissant pour alimenter les périphérique usb. La solution est passer par hub usb alimenté (D-Link DUB-H7 - 7 ports). </span>
+<br /><span>Je décide de brancher un disque dur 2.5" auto-alimenté par usb, et là, problème cela fait rebouter la Raspberry. La carte ne semble pas suffisamment puissante pour alimenter les périphériques usb. La solution est passée par hub usb alimenté (D-Link DUB-H7 - 7 ports). </span>
 <br /><a href="https://lh6.googleusercontent.com/-In-imZa7RqM/UaOre3T0DuI/AAAAAAAAGIk/OSdGioDjewo/DSCN1131.JPG" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="150" src="https://lh6.googleusercontent.com/-In-imZa7RqM/UaOre3T0DuI/AAAAAAAAGIk/OSdGioDjewo/DSCN1131.JPG" width="200" /></a>
-<br /><br /><span>En parcourant quelques blogs qu'il était possible d'exploiter les télécommande de la WII. Cela a attiré ma curiosité, j'ai donc décidé de commander en plus du hub une petite clé bluetooth. Sans doute prochainement un nouveau billet pour vous raconter ce que j'aurai pu faire avec la télécommande de la WII. En attendant voici l'adresse de mon <a href="https://github.com/sguernion/myPI" target="_blank">repository</a> sur github.</span></b>
+<br /><br /><span>En parcourant quelques blogs j'ai vu qu'il était possible d'exploiter les télécommandes de la WII. Cela a attiré ma curiosité, j'ai donc décidé de commander en plus du hub une petite clé bluetooth. Sans doute prochainement un nouveau billet pour vous raconter ce que j'aurai pu faire avec la télécommande de la WII. En attendant voici l'adresse de mon <a href="https://github.com/sguernion/myPI" target="_blank">repository</a> sur github.</span></b>
 </p>
 
 	<hr />
 	 <div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_shortname = 'sguernion'; // required: replace example with your forum shortname
+		var disqus_identifier = '2013/2013-03-07-raspberry.html';
+		var disqus_title = "Mes premiers pas avec le Raspberry";
+		var disqus_url = 'http://sguernion.github.io/2013/2013-03-07-raspberry.html';
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function() {
@@ -129,16 +141,6 @@ span (font-family: Arial; font-size: 15px; vertical-align: baseline; white-space
         })();
     </script>
   
-	
-	<script type="text/javascript">
-  window.___gcfg = {lang: 'fr'};
-
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/platform.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
 		</div>
 		<div id="push"></div>
     </div>
@@ -153,7 +155,15 @@ span (font-family: Arial; font-size: 15px; vertical-align: baseline; white-space
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
+	<script type="text/javascript">
+		  window.___gcfg = {lang: 'fr'};
 
+		  (function() {
+			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			po.src = 'https://apis.google.com/js/platform.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
     
   </body>
 </html>
