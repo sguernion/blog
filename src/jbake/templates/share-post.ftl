@@ -1,4 +1,4 @@
-<div class="share-buttons share-buttons-post">
+<div class="share-buttons share-buttons-post no-print">
 	<div class="g-plusone" data-size="medium"></div>
 		
 	<a href="https://twitter.com/share" class="twitter-share-button" data-via="${config.twitter_username}" data-lang="fr">Tweeter</a>

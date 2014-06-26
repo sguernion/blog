@@ -13,7 +13,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>index.html"><i class="fa fa-home"></i> Home</a></li>
-			<li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>expositions.html">Galerie</a></li>
+			<li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>expositions/index.html">Galerie</a></li>
 			<li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>projects.html">Projets</a></li>
 			
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>about.html">About</a></li>

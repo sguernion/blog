@@ -6,7 +6,7 @@
 		<h1><#escape x as x?xml>${content.title}</#escape></h1>
 	</div>
 	
-	 <p class="post-info">
+	 <p class="post-info no-print">
   				<i class="fa fa-calendar-o"></i>&nbsp;
 				${content.date?string("dd MMMM yyyy")}
 				&nbsp;&nbsp;&nbsp;<i class="fa fa-bullhorn"></i>&nbsp;
@@ -19,7 +19,7 @@
 	<p>${content.body}</p>
 
 	<hr />
-	 <div id="disqus_thread"></div>
+	 <div id="disqus_thread" class="no-print"></div>
     <script type="text/javascript">
         var disqus_shortname = '${config.disqus_username}'; // required: replace example with your forum shortname
 		var disqus_identifier = '${content.uri}';

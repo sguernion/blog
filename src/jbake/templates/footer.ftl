@@ -2,7 +2,7 @@
 		<div id="push"></div>
     </div>
     
-    <div id="footer">
+    <div id="footer" class="no-print">
       <div class="container">
         <p class="muted credit">&copy; 2014 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake ${version}</a></p>
       </div>
