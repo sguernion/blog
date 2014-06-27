@@ -8,9 +8,13 @@
 	</div>
 <div class="row">
 	<div class="col-lg-8">
+	
+	<hr/>
 	<#list posts as post>
   		<#if (post.status == "published")>
-  			<a href="${post.uri}"><h1><#escape x as x?xml>${post.title}</#escape></h1></a>			 
+			
+  			<a href="${post.uri}"><h1><#escape x as x?xml>${post.title}</#escape></h1></a>	
+			 <p>Tags : <#list post.tags as tag><a href="tags/${tag}.html">${tag}</a><#if tag_has_next>,</#if></#list></p>			
 			 <p class="post-info">
   				<i class="fa fa-calendar-o"></i>&nbsp;
   				${post.date?string("dd MMMM yyyy")}
@@ -23,6 +27,8 @@
   			<p>${post.body}</p>
   		</#if>
   	</#list>
+
+
 	
 	<hr />
 	<p>Older posts are available in the <a href="${config.archive_file}">archive</a>.</p>
