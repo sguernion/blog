@@ -45,7 +45,7 @@
 		</#if>
 	</#list>
 <#list m as tag>
-	<p><a href="tags/${tag.name}.html">${tag.name}</a>(${tag.count})</p>	
+	<p><a href="tags/${tag.name}.html">${tag.name}</a> (${tag.count})</p>	
 </#list>
  <br/><br/><hr/>
 <a class="twitter-timeline" href="https://twitter.com/sguernion" data-widget-id="324975968873742336">Tweets de @sguernion</a>
