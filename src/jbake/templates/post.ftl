@@ -12,7 +12,7 @@
 				&nbsp;&nbsp;&nbsp;<i class="fa fa-bullhorn"></i>&nbsp;
 				<a href="${content.uri}#disqus_thread" data-disqus-identifier="${content.uri}">
 					${config.disqus_no_comments}
-				</a>
+				</a>&nbsp;&nbsp; <i class="fa fa-tag"></i>&nbsp; <#list content.tags as tag><a href="tags/${tag}.html">${tag}</a><#if tag_has_next>,</#if></#list>
 	 </p>
 	 <#include "share-post.ftl">
 

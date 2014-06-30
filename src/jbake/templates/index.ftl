@@ -13,15 +13,14 @@
 	<#list posts as post>
   		<#if (post.status == "published")>
 			
-  			<a href="${post.uri}"><h1><#escape x as x?xml>${post.title}</#escape></h1></a>	
-			 <p>Tags : <#list post.tags as tag><a href="tags/${tag}.html">${tag}</a><#if tag_has_next>,</#if></#list></p>			
+  			<a href="${post.uri}"><h1><#escape x as x?xml>${post.title}</#escape></h1></a>		
 			 <p class="post-info">
   				<i class="fa fa-calendar-o"></i>&nbsp;
   				${post.date?string("dd MMMM yyyy")}
   				&nbsp;&nbsp;&nbsp;<i class="fa fa-bullhorn"></i>&nbsp;
   				<a href="${post.uri}#disqus_thread" data-disqus-identifier="${post.uri}">
   					${config.disqus_no_comments}
-  				</a>
+  				</a>&nbsp;&nbsp; <i class="fa fa-tag"></i>&nbsp; <#list post.tags as tag><a href="tags/${tag}.html">${tag}</a><#if tag_has_next>,</#if></#list>
 				&nbsp;&nbsp;<#include "share-index.ftl">
   			</p>
   			<p>${post.body}</p>

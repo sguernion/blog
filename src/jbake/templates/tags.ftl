@@ -8,6 +8,7 @@
 	
 	<!--<ul>-->
 		<#list tag_posts as post>
+		<#if (post.status == "published")>
 		<#if (last_month)??>
 			<#if post.date?string("MMMM yyyy") != last_month>
 				</ul>
@@ -21,6 +22,7 @@
 		
 		<li>${post.date?string("dd")} - <a href="${post.uri}">${post.title}</a></li>
 		<#assign last_month = post.date?string("MMMM yyyy")>
+		</#if>
 		</#list>
 	</ul>
 	
