@@ -1,14 +1,39 @@
 <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JBake</title>
+    <title>SGuernion Blog</title>
     <link>http://sguernion.github.io/</link>
     <atom:link href="http://sguernion.github.io//feed.xml" rel="self" type="application/rss+xml" />
-    <description>JBake Bootstrap Template</description>
-    <language>en-gb</language>
-    <pubDate>lun., 30 juin 2014 17:07:39 +0200</pubDate>
-    <lastBuildDate>lun., 30 juin 2014 17:07:39 +0200</lastBuildDate>
+    <description>SGuernion Blog</description>
+    <language>fr</language>
+    <pubDate>mer., 2 juil. 2014 17:57:51 +0200</pubDate>
+    <lastBuildDate>mer., 2 juil. 2014 17:57:51 +0200</lastBuildDate>
 
+    <item>
+      <title>Pretexto</title>
+      <link>http://sguernion.github.io//expositions/2014-09-5-pretexto.html</link>
+      <pubDate>ven., 5 sept. 2014 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">expositions/2014-09-5-pretexto.html</guid>
+      	<description>
+	
+
+&lt;style type=&quot;text/css&quot;&gt;
+.textLeft {clear: both; text-align: left;}
+span (font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;}
+.textCenter {clear: both; text-align: center;}
+&lt;/style&gt;
+
+&lt;p class=&quot;textCenter&quot; style=&quot;font-size: 35px;&quot;&gt;Exposition Pretexto&lt;/p&gt;
+&lt;p class=&quot;textCenter&quot; style=&quot;font-size: 20px;&quot;&gt;Tous les PRETEXTES sont bons !&lt;/p&gt;
+&lt;p class=&quot;textCenter&quot; style=&quot;font-size: 19px;&quot;&gt;6 et 7 septembre 2014&lt;/p&gt;
+
+&lt;p class=&quot;textCenter&quot;&gt;Prochainement l&apos;eposition l&apos;atelier Pretexte à Domloup&lt;/p&gt;
+&lt;p class=&quot;textCenter&quot;&gt;Découvrez les oeuvres de l&apos;ensemble des membres de l&apos;atelier&lt;/p&gt;
+&lt;img src=&quot;https://lh5.googleusercontent.com/-56afAsiwsr8/U6xEaeE8bzI/AAAAAAAAI2I/rKUZ4NWuggk/s500-no/qrcode.jpeg&quot; width=&quot;150px&quot; height=&quot;150px&quot; mageanchor=&quot;1&quot; style=&quot;clear: right; float: right; margin-left: 1em;&quot;/&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+	</description>
+    </item>
     <item>
       <title>Mes premiers pas avec le Raspberry</title>
       <link>http://sguernion.github.io//2013/03/raspberry.html</link>
