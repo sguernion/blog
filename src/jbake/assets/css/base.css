@@ -57,6 +57,13 @@ body {
 
 }
 
+.page-date {
+  padding-left: 1050px;
+  margin-top: -25px;
+  color:#FFFFFF;
+  font-weight:bold;
+}
+
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */

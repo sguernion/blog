@@ -5,7 +5,7 @@
 	<div class="page-header headerbg">
 		<h1>Tag: ${tag}</h1>
 	</div>
-	
+		<p><h2><a href="/blog/tags.html" >Tags</a></h2></p>
 	<!--<ul>-->
 		<#list tag_posts as post>
 		<#if (post.status == "published")>
@@ -20,7 +20,7 @@
 			<ul>
 		</#if>
 		
-		<li>${post.date?string("dd")} - <a href="${post.uri}">${post.title}</a></li>
+		<li>${post.date?string("dd")} - <a href="/blog/${post.uri}">${post.title}</a></li>
 		<#assign last_month = post.date?string("MMMM yyyy")>
 		</#if>
 		</#list>

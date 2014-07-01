@@ -8,16 +8,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>">Sguernion</a>
+          <a class="navbar-brand" href="/blog/">Sguernion</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>index.html"><i class="fa fa-home"></i> Home</a></li>
-			<li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>expositions/index.html">Galerie</a></li>
-			<li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>projects.html">Projets</a></li>
+            <li><a href="/blog/index.html"><i class="fa fa-home"></i> Home</a></li>
+			<li><a href="/blog/expositions/index.html">Galerie</a></li>
+			<li><a href="/blog/projects.html">Projets</a></li>
 			
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>about.html">About</a></li>
-            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.feed_file}"><i class="fa fa-rss" alt="Flux RSS"></i></a></li>
+            <li><a href="/blog/about.html">About</a></li>
+            <li><a href="/blog/${config.feed_file}"><i class="fa fa-rss" alt="Flux RSS"></i></a></li>
           </ul>
 		  <ul class="nav navbar-nav navbar-right">
 			<li><a href="https://github.com/sguernion"><i class="fa fa-github"></i></a></li>
