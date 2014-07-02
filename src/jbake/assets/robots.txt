@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: http://http://sguernion.github.io/blog/sitemap.xml

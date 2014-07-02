@@ -1,4 +1,4 @@
-<h2><a href="/blog/arcjives.html" >Archives</a></h2>	
+<h2><a href="${config.archive_file}" >Archives</a></h2>	
 	<#list published_posts as post>
 		<#if (last_month)??>
 			<#if post.date?string("MMMM yyyy") != last_month>

@@ -1,20 +1,26 @@
-<#include "header.ftl">
+<%include "header.gsp"%>
 	
-	<#include "menu.ftl">
+	<%include "menu.ftl"%>
 	
 	<div class="page-header ${content.class}">
-		<h1><#escape x as x?xml>${content.title}</#escape></h1>
+		<h1>${content.title}</h1>
 	</div>
 	
 	 <p class="post-info no-print">
   				<i class="fa fa-calendar-o"></i>&nbsp;
-				${content.date?string("dd MMMM yyyy")}
+				${content.date.format("dd MMMM yyyy")}
 				&nbsp;&nbsp;&nbsp;<i class="fa fa-bullhorn"></i>&nbsp;
 				<a href="${content.uri}#disqus_thread" data-disqus-identifier="${content.uri}">
 					${config.disqus_no_comments}
-				</a>&nbsp;&nbsp; <i class="fa fa-tag"></i>&nbsp; <#list content.tags as tag><a href="tags/${tag}.html">${tag}</a><#if tag_has_next>,</#if></#list>
+				</a>&nbsp;&nbsp; <i class="fa fa-tag"></i>&nbsp; <%
+                            out << content.tags.collect { post_tag ->
+                                """<a href="tags/${post_tag}.html">${post_tag}</a>"""
+                            } .join(", ")
+                        %>
 	 </p>
-	 <#include "share-post.ftl">
+	<!-- include share-post.ftl" -->
+
+	
 
 	<p>${content.body}</p>
 
@@ -34,4 +40,4 @@
         })();
     </script>
   
-<#include "footer.ftl">
+<%include "footer.ftl"%>
