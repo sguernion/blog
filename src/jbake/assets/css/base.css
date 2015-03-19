@@ -1,0 +1,169 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 60px;
+}
+#footer {
+  background-color: #f5f5f5;
+  padding: 0;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+          box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+/* Page header tweaks */
+.page-header {
+  background-color: #f5f5f5;
+  padding: 20px 20px 10px;
+  margin: -20px -20px 20px;
+
+}
+
+.page-date {
+  padding-left: 1050px;
+  margin-top: -25px;
+  color:#FFFFFF;
+  font-weight:bold;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#wrap > .container {
+  padding-top: 60px;
+}
+.container .credit {
+  margin: 20px 0;
+}
+
+/*code {
+  font-size: 80%;
+}*/
+
+
+
+/* Social Icons Section */
+ul.social{
+	text-align: right; 
+	margin-bottom: 0; 
+	float: right;
+	}
+
+ul.social li{
+	display: inline-block; 
+	width: 24px; 
+	height: 24px; 
+	padding: 18px 2px 0; 
+	margin: 0;
+			  -moz-opacity:0.8;
+     filter: alpha(opacity=80);
+     			   opacity:0.8;
+	   -moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	     -o-transition: all .3s ease-in-out;
+	        transition: all .3s ease-in-out;
+	}
+
+ul.social li:hover{
+			   -moz-opacity:1.0 !important;
+     filter: alpha(opacity=100) !important;
+     			    opacity:1.0 !important;
+}	
+
+
+
+.galerie {
+    min-height:200px; max-height:300px;
+	padding-top: 10px; height: 40px;
+	padding-left: 0; padding-right: 0;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	background: transparent url("../images/header_bg.jpg") no-repeat scroll center 0px;
+}	
+
+.galerie h1{
+	padding-left: 10px;
+	margin-top: -7px;
+	color:#FFFFFF;
+}
+
+.headerbg {
+    min-height:200px; max-height:300px;
+	padding-top: 10px; height: 40px;
+	padding-left: 0; padding-right: 0;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	background: transparent url("../images/header2.JPG") no-repeat scroll center 0px;
+}
+
+.headercafe {
+    min-height:200px; max-height:300px;
+	padding-top: 10px; height: 40px;
+	padding-left: 0; padding-right: 0;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	background: transparent url("../images/header_cafe.jpg") no-repeat scroll center 0px;
+}
+
+.headercafe h1{
+	padding-left: 10px;
+	margin-top: -7px;
+	color:#FFFFFF;
+}	
+
+.headerbg h1{
+	padding-left: 10px;
+	margin-top: -7px;
+	color:#FFFFFF;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
