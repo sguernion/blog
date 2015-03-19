@@ -12,7 +12,7 @@ function error_exit
 }
 
 if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
-  git config --global user.email ${GH_EMAIL}
+  git config --global user.email $gsylvain35@gmail.com
 
   git remote add $GH_REMOTE https://${GH_TOKEN}@github.com/$GH_ACCOUNT/$GH_REPOSITORY.git
 
