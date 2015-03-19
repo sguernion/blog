@@ -15,7 +15,7 @@ fi
 set -e
 
 # build site with jbake, by default to `_site' folder
-./gradlew jbake
+mvn clean install
 
 # cleanup
 rm -rf ../${GH_REPOSITORY}.${GH_PAGESBRANCH}
@@ -24,7 +24,7 @@ rm -rf ../${GH_REPOSITORY}.${GH_PAGESBRANCH}
 git clone https://${GH_TOKEN}@github.com/${GH_ACCOUNT}/${GH_REPOSITORY}.git ../${GH_REPOSITORY}.${GH_PAGESBRANCH}
 
 # copy generated HTML site to `master' branch
-cp -R build/jbake/* ../${GH_REPOSITORY}.${GH_PAGESBRANCH}
+cp -R target/blog/* ../${GH_REPOSITORY}.${GH_PAGESBRANCH}
 
 # commit and push generated content to `master' branch
 # since repository was cloned in write mode with token auth - we can push there
