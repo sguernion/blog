@@ -3,7 +3,7 @@
 GH_ACCOUNT=sguernion
 GH_REPOSITORY=blog
 GH_REMOTE=master
-GH_PAGESBRANCH=gh-pages
+GH_PAGESBRANCH=travis
 
 # only proceed script when started not by pull request (PR)
 if [ $TRAVIS_PULL_REQUEST == "true" ]; then
@@ -14,8 +14,8 @@ fi
 # enable error reporting to the console
 set -e
 
-# build site with jekyll, by default to `_site' folder
-jekyll build
+# build site with jbake, by default to `_site' folder
+./gradlew jbake
 
 # cleanup
 rm -rf ../${GH_REPOSITORY}.${GH_PAGESBRANCH}
@@ -24,7 +24,7 @@ rm -rf ../${GH_REPOSITORY}.${GH_PAGESBRANCH}
 git clone https://${GH_TOKEN}@github.com/${GH_ACCOUNT}/${GH_REPOSITORY}.git ../${GH_REPOSITORY}.${GH_PAGESBRANCH}
 
 # copy generated HTML site to `master' branch
-cp -R _site/* ../${GH_REPOSITORY}.${GH_PAGESBRANCH}
+cp -R build/jbake/* ../${GH_REPOSITORY}.${GH_PAGESBRANCH}
 
 # commit and push generated content to `master' branch
 # since repository was cloned in write mode with token auth - we can push there
