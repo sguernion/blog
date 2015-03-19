@@ -8,8 +8,9 @@
 
     <properties>
         <jbake.inputDirectory>${project.basedir}/src/jbake</jbake.inputDirectory>
-        <maven.deploy.skip>true</maven.deploy.skip>
+		<github.global.server>github</github.global.server>
     </properties>
+
 
     <url>https://github.com/sguernion/blog</url>
 
@@ -64,14 +65,14 @@
                 <!-- Deploy the web site -->
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
-                <version>0.9</version>
+                <version>0.10</version>
                 <executions>
                     <execution>
                         <goals>
                             <goal>site</goal>
                         </goals>
                         <!-- select the Maven phase in which the plugin will be executed -->
-                        <phase>deploy</phase>
+                        <phase>verify</phase>
                         <configuration>
                             <!-- Plugin configuration ges here -->
 
@@ -83,6 +84,8 @@
                             <outputDirectory>${project.build.directory}/${project.build.finalName}</outputDirectory>
                             <!-- Use merge or override the content -->
                             <merge>true</merge>
+							<repositoryName>blog</repositoryName>
+							<repositoryOwner>sguernion</repositoryOwner>
                         </configuration>
                     </execution>
                 </executions>
