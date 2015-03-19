@@ -6,8 +6,8 @@
     <atom:link href="http://sguernion.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>SGuernion Blog</description>
     <language>fr</language>
-    <pubDate>ven., 4 juil. 2014 11:02:54 +0200</pubDate>
-    <lastBuildDate>ven., 4 juil. 2014 11:02:54 +0200</lastBuildDate>
+    <pubDate>ven., 20 mars 2015 00:36:53 +0100</pubDate>
+    <lastBuildDate>ven., 20 mars 2015 00:36:53 +0100</lastBuildDate>
 
     <item>
       <title>Pretexto</title>
@@ -30,8 +30,12 @@ span (font-family: Arial; font-size: 15px; vertical-align: baseline; white-space
 
 &lt;p class=&quot;textCenter&quot;&gt;Prochainement l&apos;eposition l&apos;atelier Pretexte à Domloup&lt;/p&gt;
 &lt;p class=&quot;textCenter&quot;&gt;Découvrez les oeuvres de l&apos;ensemble des membres de l&apos;atelier&lt;/p&gt;
-&lt;img src=&quot;https://lh4.googleusercontent.com/-uT1w9Snlyxs/U7VqwOT87bI/AAAAAAAAJG8/LZizvg4Yet8/w585-h827-no/pretexto.jpg&quot; width=&quot;485px&quot; height=&quot;727px&quot;  &gt;  
-&lt;br/&gt;&lt;br/&gt;
+&lt;div class=&quot;row&quot;&gt;  
+&lt;div class=&quot;col-lg-6&quot;&gt;  
+&lt;img src=&quot;https://lh4.googleusercontent.com/-uT1w9Snlyxs/U7VqwOT87bI/AAAAAAAAJG8/LZizvg4Yet8/w585-h827-no/pretexto.jpg&quot; width=&quot;245px&quot; height=&quot;327px&quot;  &gt;  
+&lt;/div&gt;&lt;div class=&quot;col-lg-6&quot;&gt;  
+&lt;iframe allowfullscreen width=&quot;500&quot; height=&quot;400&quot; src=&quot;https://embed.culturalspot.org/embed/exhibit/UwKCd2gOkegjKg&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;br/&gt;&lt;br/&gt;
 
 
 &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
