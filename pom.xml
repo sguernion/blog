@@ -20,7 +20,7 @@
             <plugin>
                 <groupId>br.com.ingenieux</groupId>
                 <artifactId>jbake-maven-plugin</artifactId>
-                <version>0.0.7-SNAPSHOT</version>
+                <version>0.0.9</version>
                 <executions>
                     <execution>
                         <id>default-generate</id>
