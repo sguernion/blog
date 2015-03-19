@@ -4,6 +4,10 @@ branches:
   - master
 cache:
   bundler: true
+  
+before_script:
+ - chmod +x build.sh
+  
 script: "./build.sh"
 rvm:
 - 2.1.2
