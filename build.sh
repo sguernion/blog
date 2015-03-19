@@ -5,20 +5,32 @@ GH_REPOSITORY=blog
 GH_REMOTE=master
 GH_PAGESBRANCH=gh-pages
 
-function error_exit
-{
-  echo -e "\e[01;31m$1\e[00m" 1>&2
-  exit 1
-}
-
-if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
-  git config --global user.email ${GIT_EMAIL}
-  git config user.name $GIT_NAME
-  
-  git remote add $GH_REMOTE https://${GH_TOKEN}@github.com/$GH_ACCOUNT/$GH_REPOSITORY.git
-
-  git checkout -B $GH_PAGESBRANCH
-
-  echo "Push to gh-pages branch"
-  git push -fq $GH_REMOTE $GH_PAGESBRANCH 2> /dev/null || error_exit "Unable to push to gh-pages."
+# only proceed script when started not by pull request (PR)
+if [ $TRAVIS_PULL_REQUEST == "true" ]; then
+  echo "this is PR, exiting"
+  exit 0
 fi
+
+# enable error reporting to the console
+set -e
+
+# build site with jekyll, by default to `_site' folder
+jekyll build
+
+# cleanup
+rm -rf ../${GH_REPOSITORY}.${GH_PAGESBRANCH}
+
+#clone `master' branch of the repository using encrypted GH_TOKEN for authentification
+git clone https://${GH_TOKEN}@github.com/${GH_ACCOUNT}/${GH_REPOSITORY}.git ../${GH_REPOSITORY}.${GH_PAGESBRANCH}
+
+# copy generated HTML site to `master' branch
+cp -R _site/* ../${GH_REPOSITORY}.${GH_PAGESBRANCH}
+
+# commit and push generated content to `master' branch
+# since repository was cloned in write mode with token auth - we can push there
+cd ../${GH_REPOSITORY}.${GH_PAGESBRANCH}
+git config user.email ${GIT_EMAIL}
+git config user.name ${GIT_NAME}
+git add -A .
+git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
+git push --quiet origin ${GH_PAGESBRANCH} > /dev/null 2>&1

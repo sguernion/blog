@@ -4,13 +4,9 @@ branches:
   - master
 cache:
   bundler: true
-notifications:
-  email:
-    on_success: change
-    on_failure: always
-script:
-- bundle exec jekyll build
-- ./build.sh
+script: "./build.sh"
+rvm:
+- 2.1.2
 env:
   global:
     secure: AS7hzxhq8Ur0J0ak2xFzqUc+fEn5IUkJ+CJkfWnO2mW83fKLlykqHudSoCV9RGmS+KMQTjcudII6HEwdzhWoPWwcX2cm2LFpgbMnJi+U97w/nMp8S/yzyh6pQT5dpqEAepSxc/cfN1H9yMqEUMrMeNBSGTDN8c44xgV9FAHx5BI=
