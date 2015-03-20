@@ -15,7 +15,7 @@ fi
 set -e
 
 # build site with jbake, by default to `_site' folder
-mvn clean install --settings ./settings.xml
+
 
 # cleanup
 rm -rf ../${GH_REPOSITORY}.${GH_PAGESBRANCH}
