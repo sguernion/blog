@@ -75,7 +75,6 @@
                         <phase>verify</phase>
                         <configuration>
                             <!-- Plugin configuration ges here -->
-
                             <server>github</server>
 
                             <!-- The commit message -->
