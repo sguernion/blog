@@ -6,13 +6,13 @@
     <atom:link href="http://sguernion.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>SGuernion Blog</description>
     <language>fr</language>
-    <pubDate>Fri, 20 Mar 2015 11:21:37 +0000</pubDate>
-    <lastBuildDate>Fri, 20 Mar 2015 11:21:37 +0000</lastBuildDate>
+    <pubDate>ven., 20 mars 2015 19:27:02 +0100</pubDate>
+    <lastBuildDate>ven., 20 mars 2015 19:27:02 +0100</lastBuildDate>
 
     <item>
       <title>Pretexto</title>
       <link>http://sguernion.github.io//expositions/2014-09-5-pretexto.html</link>
-      <pubDate>Fri, 5 Sep 2014 00:00:00 +0000</pubDate>
+      <pubDate>ven., 5 sept. 2014 00:00:00 +0200</pubDate>
       <guid isPermaLink="false">expositions/2014-09-5-pretexto.html</guid>
       	<description>
 	
@@ -45,7 +45,7 @@ span (font-family: Arial; font-size: 15px; vertical-align: baseline; white-space
     <item>
       <title>Mes premiers pas avec le Raspberry</title>
       <link>http://sguernion.github.io//2013/03/raspberry.html</link>
-      <pubDate>Thu, 7 Mar 2013 00:00:00 +0000</pubDate>
+      <pubDate>jeu., 7 mars 2013 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">2013/03/raspberry.html</guid>
       	<description>
 	
@@ -85,7 +85,7 @@ span (font-family: Arial; font-size: 15px; vertical-align: baseline; white-space
     <item>
       <title>Une Toile pas à pas</title>
       <link>http://sguernion.github.io//2012/01/toile.html</link>
-      <pubDate>Sat, 7 Jan 2012 00:00:00 +0000</pubDate>
+      <pubDate>sam., 7 janv. 2012 00:00:00 +0100</pubDate>
       <guid isPermaLink="false">2012/01/toile.html</guid>
       	<description>
 	
