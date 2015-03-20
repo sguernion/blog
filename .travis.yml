@@ -10,7 +10,3 @@ branches:
 install: true
 
 script: mvn clean verify --settings ./settings.xml
-
-env:
-  global:
-    secure: AS7hzxhq8Ur0J0ak2xFzqUc+fEn5IUkJ+CJkfWnO2mW83fKLlykqHudSoCV9RGmS+KMQTjcudII6HEwdzhWoPWwcX2cm2LFpgbMnJi+U97w/nMp8S/yzyh6pQT5dpqEAepSxc/cfN1H9yMqEUMrMeNBSGTDN8c44xgV9FAHx5BI=
