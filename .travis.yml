@@ -9,7 +9,7 @@ branches:
 
 install: true
 
-script: mvn clean publish --settings ./settings.xml
+script: mvn clean verify --settings ./settings.xml
 
 env:
   global:
