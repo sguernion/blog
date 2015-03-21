@@ -1,0 +1,63 @@
+<link rel="import"   href="/blog/components/polymer/polymer.html">
+
+<polymer-element name="blog-link" attributes="link label description">
+  <template>
+	<p>    - <a target="_blank" href="{{link}}">{{label}}</a>{{description}}</p>
+  </template>
+  <script>
+    Polymer();
+  </script>
+</polymer-element>
+
+
+
+<polymer-element name="blog-links" attributes="categorie classStyle">
+  <template>
+	<div class="{{classStyle}}"> 
+	   <p><b>{{categorie}} : </b></p>
+		<content></content>
+	</div>
+  </template>
+  <script>
+    Polymer({
+      ready: function() {
+        //...
+      }
+    });
+  </script>
+</polymer-element>
+
+<polymer-element name="blog-tag" attributes="link tag nb">
+  <template>
+	<li><a href="{{link}}">{{tag}}</a>({{nb}})</li>
+  </template>
+  <script>
+    Polymer();
+  </script>
+</polymer-element>
+
+<polymer-element name="blog-exposition" attributes="link expo img" >
+  <template>
+	<link rel="stylesheet" href="/blog/css/bootstrap.min.css">
+	<style>
+		
+		.exp-name {
+			text-decoration: none;
+			color: black;
+		}
+		</style>
+	<div class="col-lg-4">  
+          <div class="thumbnail">  
+            <img src="{{img}}" style="width: 130px; height: 180px;" >  
+            <div class="caption">  
+              <h5 class="exp-name" >{{expo}}</h5>  
+              <p></p>  
+               <p><a target="_blank" href="{{link}}" class="btn btn-success">Voir</a></p>  
+            </div>  
+          </div>  
+    </div>
+  </template>
+  <script>
+    Polymer('blog-exposition',{});
+  </script>
+</polymer-element>

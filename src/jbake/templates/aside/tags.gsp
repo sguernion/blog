@@ -13,6 +13,6 @@
                             String.format("%03d%s", 1000 - tag[1], tag[0].toLowerCase())
                         } .each { tagWithCount ->
                     %>
-                        <li><a href="tags/${tagWithCount[0]}.html">${tagWithCount[0]}</a> (${tagWithCount[1]})</li>
+                        <blog-tag link="tags/${tagWithCount[0]}.html" tag="${tagWithCount[0]}" nb="${tagWithCount[1]}" ></blog-tag>
                     <%}%>
                  </ol>

@@ -1,0 +1,97 @@
+title=Polymer
+date=2015-03-22
+type=post
+tags=Polymer,jbake,web-componants,bower
+class=headercafe
+status=published
+~~~~~~
+
+<p>Je vais vous présenter une exemple de mise en place de <a target ="_blank" href="https://www.polymer-project.org">Polymer</a> sur un blog construit avec <a href="">jbake</a>.</p>
+
+<h4>Présentation</h4>
+
+<p><a target ="_blank" href="https://www.polymer-project.org">Polymer</a> est une library de Google vous permettant de créer des <a target ="_blank" href="">web-componants</a> fonctionnant sur tous les navigateurs.</p>
+
+<p>Pour ceux qui ne connaissent pas les web-componants, les web-componants permettent la création et la réutilisation de ses propre balises html.</p>
+
+<p>La spécification Web Components en cours de standardisation au sein du <a target ="_blank" href="http://www.journaldunet.com/w3c/">W3C</a>. </p>
+
+<p>Pour plus d’information, je vous laisse regarder la <a target ="_blank" href="https://www.youtube.com/watch?v=7ObA5u6SxiA">présentation</a> faite au <a target ="_blank" href="http://www.breizhjug.org/">BreizhJug</a> par <a target ="_blank" href="https://twitter.com/LostInBrittany">Horacio</a>.</p>
+
+
+<h4>Installation de Polymer</h4>
+
+<p>La façon la plus simple pour l’installation des Polymer, c’est d’utiliser <a target ="_blank" href="http://bower.io/" >bower</a>.</p>
+
+<p>Pour ceux qui n’auraient pas installer bower, c’est par <a target ="_blank" href="http://bower.io/#install-bower">ici</a>.</p>
+
+<p>Si vous n’avez pas encore initialisé bower sur votre projet, vous pouvez le faire avec la commande :</p>
+
+<code>
+bower init
+</code>
+
+<p>Pour modifier l’emplacement ou seront installer les packages de bower, il faut ajouter la ligne suivante dans le ficher de configuration .bowerrc :</p>
+
+<code>
+{
+ "directory": "src/jbake/assets/components/"
+}
+</code>
+
+
+<p>Maintenant pour l’installation des polymer, il suffit de lancer la commande :</p>
+<code>bower install --save Polymer/polymer</code>
+
+<p>Vous pouvez voir que dans votre configuration bower une dépendance a été ajoutée.</p>
+
+<pre>
+<code>
+"dependencies": {
+    "polymer": "Polymer/polymer#~0.5.5" 
+  }
+</code>
+</pre>
+
+<h4>Création d’un composant Polymer</h4>
+
+<p>On crée un fichier myComponents.html qui va contenir l’ensemble de nos composants. On peut également mettre chacun des composants dans son propre fichier html.</p>
+
+<pre>
+<code>
+&lt;polymer-element name="blog-tag" attributes="link tag nb"&gt;
+  &lt;template&gt;
+	&lt;style>&lt;/style&gt;
+	&lt;li>&lt;a href="{{link}}"&gt;{{tag}}&lt;/a&gt;({{nb}})&lt;/li&gt;
+  &lt;/template&gt;
+  &lt;script&gt;
+    Polymer();
+  &lt;/script&gt;
+&lt;/polymer-element&gt;
+</code>
+</pre>
+<p>le style de composant peut être définit à l’intérieur des balises “<code>&lt;style&gt;&lt;/style&gt;</code>” . Ce style sera appliqué seulement au template et ne sera pas propagé sur le reste du code html.</p>
+
+
+<h4>Utilisation du composant </h4>
+
+<p>Maintenant pour utiliser votre composant Polymer, il faut ajouter les bon imports dans les balises “<code>&lt;head&gt;&lt;/head&gt;</code>”</p>
+
+<pre>
+<code>
+ 	&lt;!-- Polymer --&gt;
+	 &lt;script src="components/webcomponentsjs/webcomponents.min.js"&gt;&lt;/script&gt;
+	 &lt;link rel="import" href="components/myComponents.html"&gt;
+</code>
+</pre>
+
+<p>Il suffit maintenant d’y ajouter notre nouveau composant la ou on souhaite l’afficher.</p>
+
+<pre>
+<code>
+&lt;blog-tag link="tags/polymer.html" tag="Polymer" nb="1" &gt;&lt;/blog-tag&gt;
+</code>
+</pre>
+<p>Vous pouvez retrouver l’exemple dans les <a target ="_blank" href="https://github.com/sguernion/blog" >sources</a> du blog. Dans un prochain billet, une utilisation plus poussée des Polymer.</p>
+
+
