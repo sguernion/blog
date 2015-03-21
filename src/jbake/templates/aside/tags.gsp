@@ -1,4 +1,4 @@
-<% if (!content.tags_desc){ %><h2><a href="tags.html" >Tags</a></h2><%}%>
+<% if (!content.tags_desc){ %><h4><a href="tags.html" >Tags</a></h4><hr/><%}%>
 <ol class="list-unstyled" style="margin-left: 0px">
                     <%
                         // alltags : list de tags (String)

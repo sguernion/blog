@@ -1,7 +1,9 @@
-<%include "aside/links.gsp"%>
+<div class="block"><%include "aside/conference.gsp"%></div>
 <hr/>
-<%include "aside/twitter.ftl"%>
+<div class="block"><%include "aside/links.gsp"%></div>
 <hr/>
-<%include "aside/tags.gsp"%>
+<div class="block"><%include "aside/twitter.ftl"%></div>
 <hr/>
-<%include "aside/archives.ftl"%>
+<div class="block"><%include "aside/tags.gsp"%></div>
+<hr/>
+<div class="block"><%include "aside/archives.ftl"%></div>

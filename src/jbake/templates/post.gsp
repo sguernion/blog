@@ -1,10 +1,10 @@
 <%include "header.gsp"%>
 	
-	<%include "menu.ftl"%>
+<%include "menu.ftl"%>
 	
-	<div class="page-header ${content.class}">
-		<h1>${content.title}</h1>
-	</div>
+<div class="page-header ${content.class} no-print">
+	<h1>${content.title}</h1>
+</div>
 	
 	 <p class="post-info no-print">
   				<i class="fa fa-calendar-o"></i>&nbsp;
@@ -22,10 +22,10 @@
 
 	
 
-	<p>${content.body}</p>
+<p>${content.body}</p>
 
-	<hr />
-	 <div id="disqus_thread" class="no-print"></div>
+<hr />
+<div id="disqus_thread" class="no-print"></div>
     <script type="text/javascript">
         var disqus_shortname = '${config.disqus_username}'; // required: replace example with your forum shortname
 		var disqus_identifier = '${content.uri}';
