@@ -6,13 +6,13 @@
     <atom:link href="http://sguernion.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>SGuernion Blog</description>
     <language>fr</language>
-    <pubDate>ven., 20 mars 2015 19:36:12 +0100</pubDate>
-    <lastBuildDate>ven., 20 mars 2015 19:36:12 +0100</lastBuildDate>
+    <pubDate>Sat, 21 Mar 2015 00:09:16 +0000</pubDate>
+    <lastBuildDate>Sat, 21 Mar 2015 00:09:16 +0000</lastBuildDate>
 
     <item>
       <title>Pretexto</title>
       <link>http://sguernion.github.io//expositions/2014-09-5-pretexto.html</link>
-      <pubDate>ven., 5 sept. 2014 00:00:00 +0200</pubDate>
+      <pubDate>Fri, 5 Sep 2014 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">expositions/2014-09-5-pretexto.html</guid>
       	<description>
 	
@@ -33,8 +33,10 @@ span (font-family: Arial; font-size: 15px; vertical-align: baseline; white-space
 &lt;div class=&quot;row&quot;&gt;  
 &lt;div class=&quot;col-lg-6&quot;&gt;  
 &lt;img src=&quot;https://lh4.googleusercontent.com/-uT1w9Snlyxs/U7VqwOT87bI/AAAAAAAAJG8/LZizvg4Yet8/w585-h827-no/pretexto.jpg&quot; width=&quot;245px&quot; height=&quot;327px&quot;  &gt;  
-&lt;/div&gt;&lt;div class=&quot;col-lg-6&quot;&gt;  
-&lt;iframe allowfullscreen width=&quot;500&quot; height=&quot;400&quot; src=&quot;https://embed.culturalspot.org/embed/exhibit/UwKCd2gOkegjKg&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;br/&gt;
+&lt;div class=&quot;col-lg-8&quot;&gt;  
+&lt;iframe allowfullscreen width=&quot;600&quot; height=&quot;500&quot; src=&quot;https://embed.culturalspot.org/embed/exhibit/UwKCd2gOkegjKg&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;br/&gt;&lt;br/&gt;
 
 
@@ -45,7 +47,7 @@ span (font-family: Arial; font-size: 15px; vertical-align: baseline; white-space
     <item>
       <title>Mes premiers pas avec le Raspberry</title>
       <link>http://sguernion.github.io//2013/03/raspberry.html</link>
-      <pubDate>jeu., 7 mars 2013 00:00:00 +0100</pubDate>
+      <pubDate>Thu, 7 Mar 2013 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">2013/03/raspberry.html</guid>
       	<description>
 	
@@ -85,7 +87,7 @@ span (font-family: Arial; font-size: 15px; vertical-align: baseline; white-space
     <item>
       <title>Une Toile pas à pas</title>
       <link>http://sguernion.github.io//2012/01/toile.html</link>
-      <pubDate>sam., 7 janv. 2012 00:00:00 +0100</pubDate>
+      <pubDate>Sat, 7 Jan 2012 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">2012/01/toile.html</guid>
       	<description>
 	
