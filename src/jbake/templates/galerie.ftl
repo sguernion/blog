@@ -1,6 +1,6 @@
-<#include "header.ftl">
+<#include "header.gsp">
 
-	<#include "menu.ftl">
+	<#include "menu.gsp">
 	
 	<div class="page-header ${content.class}">
 		<h1><#escape x as x?xml>${content.title}</#escape></h1>
@@ -13,4 +13,4 @@
 
 	<hr />
 
-<#include "footer.ftl">
+<#include "footer.gsp">
