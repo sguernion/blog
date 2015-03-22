@@ -1,5 +1,5 @@
 <% if (!content.links_desc){ %><h4><a href="liens.html" >Liens</a></h4><hr/><%}%>
-<div class="row">
+<div class="row" style="margin-left: 0px">
 		<blog-links categorie="Jug/GdG" classStyle="col-lg-8">
 			<blog-link link="http://www.breizhjug.org/" label="BreizhJug" description="<% if (content.links_desc){ %> - Site du JUG Rennais<%}%>" ></blog-link>
 			<blog-link link="http://www.breizhcamp.org/" label="BreizhCamp" description="<% if (content.links_desc){ %> - Site du JUG Rennais<%}%>" ></blog-link>

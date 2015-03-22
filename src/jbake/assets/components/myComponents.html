@@ -2,6 +2,7 @@
 
 <polymer-element name="blog-link" attributes="link label description">
   <template>
+	<style></style>
 	<p>    - <a target="_blank" href="{{link}}">{{label}}</a>{{description}}</p>
   </template>
   <script>
@@ -13,6 +14,7 @@
 
 <polymer-element name="blog-links" attributes="categorie classStyle">
   <template>
+	<style></style>
 	<div class="{{classStyle}}"> 
 	   <p><b>{{categorie}} : </b></p>
 		<content></content>
@@ -29,7 +31,18 @@
 
 <polymer-element name="blog-tag" attributes="link tag nb">
   <template>
-	<li><a href="{{link}}">{{tag}}</a>({{nb}})</li>
+	<style>
+		.tag,.tag a{
+			font-weight: bold;
+			color: #C8BCA7;
+		}
+		.tag a{
+			color: black;
+			text-decoration: none;
+		}
+	
+	</style>
+	<li class="tag"><a href="{{link}}">{{tag}}</a>({{nb}})</li>
   </template>
   <script>
     Polymer();
