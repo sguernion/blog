@@ -6,16 +6,16 @@
     <atom:link href="http://sguernion.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>SGuernion Blog</description>
     <language>fr</language>
-    <pubDate>Sun, 22 Mar 2015 18:20:51 +0000</pubDate>
-    <lastBuildDate>Sun, 22 Mar 2015 18:20:51 +0000</lastBuildDate>
-
+    <pubDate>Sun, 22 Mar 2015 22:46:52 +0000</pubDate>
+    <lastBuildDate>Sun, 22 Mar 2015 22:46:52 +0000</lastBuildDate>
+    
     <item>
       <title>Polymer</title>
       <link>http://sguernion.github.io//2015/03/polymer.html</link>
       <pubDate>Sun, 22 Mar 2015 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">2015/03/polymer.html</guid>
-      	<description>
-	
+      <description>
+      
 &lt;p&gt;Je vais vous présenter une exemple de mise en place de &lt;a target =&quot;_blank&quot; href=&quot;https://www.polymer-project.org&quot;&gt;Polymer&lt;/a&gt; sur un blog construit avec &lt;a href=&quot;&quot;&gt;jbake&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h4&gt;Présentation&lt;/h4&gt;
@@ -106,15 +106,16 @@ bower init
 
 
 
-	</description>
+	  </description>
     </item>
+    
     <item>
       <title>Pretexto</title>
       <link>http://sguernion.github.io//expositions/2014-09-5-pretexto.html</link>
       <pubDate>Fri, 5 Sep 2014 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">expositions/2014-09-5-pretexto.html</guid>
-      	<description>
-	
+      <description>
+      
 
 &lt;style type=&quot;text/css&quot;&gt;
 .textLeft {clear: both; text-align: left;}
@@ -141,15 +142,16 @@ span (font-family: Arial; font-size: 15px; vertical-align: baseline; white-space
 
 &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 
-	</description>
+	  </description>
     </item>
+    
     <item>
       <title>Mes premiers pas avec le Raspberry</title>
       <link>http://sguernion.github.io//2013/03/raspberry.html</link>
       <pubDate>Thu, 7 Mar 2013 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">2013/03/raspberry.html</guid>
-      	<description>
-	
+      <description>
+      
 &lt;style type=&quot;text/css&quot;&gt;
 .textLeft {clear: both; text-align: left;}
 span (font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;}
@@ -181,15 +183,16 @@ span (font-family: Arial; font-size: 15px; vertical-align: baseline; white-space
 &lt;br /&gt;&lt;a href=&quot;https://lh6.googleusercontent.com/-In-imZa7RqM/UaOre3T0DuI/AAAAAAAAGIk/OSdGioDjewo/DSCN1131.JPG&quot; imageanchor=&quot;1&quot; style=&quot;clear: right; float: right; margin-bottom: 1em; margin-left: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;150&quot; src=&quot;https://lh6.googleusercontent.com/-In-imZa7RqM/UaOre3T0DuI/AAAAAAAAGIk/OSdGioDjewo/DSCN1131.JPG&quot; width=&quot;200&quot; /&gt;&lt;/a&gt;
 &lt;br /&gt;&lt;br /&gt;&lt;span&gt;En parcourant quelques blogs j&apos;ai vu qu&apos;il était possible d&apos;exploiter les télécommandes de la WII. Cela a attiré ma curiosité, j&apos;ai donc décidé de commander en plus du hub une petite clé bluetooth. Sans doute prochainement un nouveau billet pour vous raconter ce que j&apos;aurai pu faire avec la télécommande de la WII. En attendant voici l&apos;adresse de mon &lt;a href=&quot;https://github.com/sguernion/myPI&quot; target=&quot;_blank&quot;&gt;repository&lt;/a&gt; sur github.&lt;/span&gt;&lt;/b&gt;
 
-	</description>
+	  </description>
     </item>
+    
     <item>
       <title>Une Toile pas à pas</title>
       <link>http://sguernion.github.io//2012/01/toile.html</link>
       <pubDate>Sat, 7 Jan 2012 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">2012/01/toile.html</guid>
-      	<description>
-	
+      <description>
+      
 &lt;style type=&quot;text/css&quot;&gt;
 .textLeft {clear: both; text-align: left;}
 .textCenter {clear: both; text-align: center;}
@@ -227,8 +230,9 @@ Un peu plus de détails pour l&apos;immeuble au second plan&lt;br /&gt;
 &lt;br /&gt;
 &lt;br /&gt;
 
-	</description>
+	  </description>
     </item>
+    
 
   </channel> 
 </rss>

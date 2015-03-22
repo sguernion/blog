@@ -42,14 +42,29 @@
 		}
 	
 	</style>
-	<li class="tag"><a href="{{link}}">{{tag}}</a>({{nb}})</li>
+	<li class="tag"><a href="{{link}}">{{tag}}</a> ({{nb}})</li>
   </template>
   <script>
     Polymer();
   </script>
 </polymer-element>
 
-<polymer-element name="blog-exposition" attributes="link expo img" >
+
+<polymer-element name="blog-tags" attributes="">
+  <template>
+	<style>
+		.list-unstyled{padding-left:0;list-style:none}
+	</style>
+	<ol class="list-unstyled" style="margin-left: 0px">
+		<content></content>
+	</ol>
+  </template>
+  <script>
+    Polymer();
+  </script>
+</polymer-element>
+
+<polymer-element name="blog-exposition" attributes="link expo img styleImg" >
   <template>
 	<link rel="stylesheet" href="/blog/css/bootstrap.min.css">
 	<style>
@@ -61,16 +76,34 @@
 		</style>
 	<div class="col-lg-4">  
           <div class="thumbnail">  
-            <img src="{{img}}" style="width: 130px; height: 180px;" >  
+            <img src="{{img}}" style="{{styleImg}}" >  
             <div class="caption">  
               <h5 class="exp-name" >{{expo}}</h5>  
               <p></p>  
-               <p><a target="_blank" href="{{link}}" class="btn btn-success">Voir</a></p>  
+               <p hidden?="{{!link}}"><a target="_blank" href="{{link}}" class="btn btn-success">Voir</a></p>  
             </div>  
           </div>  
     </div>
   </template>
   <script>
     Polymer('blog-exposition',{});
+  </script>
+</polymer-element>	
+
+
+<polymer-element name="blog-conference" attributes="link conference description date">
+  <template>
+	<style>
+		strong{
+			font-weight: bold;
+			color: #C8BCA7;
+		}
+	
+	</style>
+		<p><a target="_blank" href="{{link}}">{{conference}}</a>{{description}}</p>
+		<p><strong>{{date}}</strong></p>
+  </template>
+  <script>
+    Polymer();
   </script>
 </polymer-element>
