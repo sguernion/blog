@@ -1,6 +1,6 @@
 <%include  "header.gsp"%>
 
-<%include  "menu.ftl"%>
+<%include  "menu.gsp"%>
 	
 <div class="page-header ${content.class} no-print">
 	<h1>${content.title}</h1><span class="page-date"><em>${content.date.format("dd MMMM yyyy")}</em></span>
@@ -15,4 +15,4 @@
 
 <hr />
 
-<%include  "footer.ftl"%>
+<%include  "footer.gsp"%>

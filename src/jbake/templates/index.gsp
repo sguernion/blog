@@ -1,7 +1,7 @@
 <#assign pagetitle = "Guernion Sylvain">
 <%include "header.gsp"%>
 	
-<%include "menu.ftl"%>
+<%include "menu.gsp"%>
 
 <div class="page-header headerbg no-print">
 	<h1>Guernion Sylvain</h1>
@@ -34,4 +34,4 @@
 	<div class="aside col-lg-4"><%include "aside.gsp"%></div>
 </div>
 </div>
-<%include "footer.ftl"%>
+<%include "footer.gsp"%>

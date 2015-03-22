@@ -1,6 +1,6 @@
 <%include "header.gsp"%>
 	
-<%include "menu.ftl"%>
+<%include "menu.gsp"%>
 	
 <div class="page-header ${content.class} no-print">
 	<h1>${content.title}</h1>
@@ -40,4 +40,4 @@
         })();
     </script>
   
-<%include "footer.ftl"%>
+<%include "footer.gsp"%>

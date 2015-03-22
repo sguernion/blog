@@ -1,5 +1,5 @@
 <% if (!content.tags_desc){ %><h4><a href="tags.html" >Tags</a></h4><hr/><%}%>
-<ol class="list-unstyled" style="margin-left: 0px">
+<blog-tags>
                     <%
                         // alltags : list de tags (String)
                         alltags.collect { tag ->
@@ -15,4 +15,4 @@
                     %>
                         <blog-tag link="tags/${tagWithCount[0]}.html" tag="${tagWithCount[0]}" nb="${tagWithCount[1]}" ></blog-tag>
                     <%}%>
-                 </ol>
+</blog-tags>
