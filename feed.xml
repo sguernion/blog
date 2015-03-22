@@ -6,9 +6,108 @@
     <atom:link href="http://sguernion.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>SGuernion Blog</description>
     <language>fr</language>
-    <pubDate>Sat, 21 Mar 2015 00:09:16 +0000</pubDate>
-    <lastBuildDate>Sat, 21 Mar 2015 00:09:16 +0000</lastBuildDate>
+    <pubDate>Sun, 22 Mar 2015 18:20:51 +0000</pubDate>
+    <lastBuildDate>Sun, 22 Mar 2015 18:20:51 +0000</lastBuildDate>
 
+    <item>
+      <title>Polymer</title>
+      <link>http://sguernion.github.io//2015/03/polymer.html</link>
+      <pubDate>Sun, 22 Mar 2015 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">2015/03/polymer.html</guid>
+      	<description>
+	
+&lt;p&gt;Je vais vous présenter une exemple de mise en place de &lt;a target =&quot;_blank&quot; href=&quot;https://www.polymer-project.org&quot;&gt;Polymer&lt;/a&gt; sur un blog construit avec &lt;a href=&quot;&quot;&gt;jbake&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4&gt;Présentation&lt;/h4&gt;
+
+&lt;p&gt;&lt;a target =&quot;_blank&quot; href=&quot;https://www.polymer-project.org&quot;&gt;Polymer&lt;/a&gt; est une library de Google vous permettant de créer des &lt;a target =&quot;_blank&quot; href=&quot;&quot;&gt;web-componants&lt;/a&gt; fonctionnant sur tous les navigateurs.&lt;/p&gt;
+
+&lt;p&gt;Pour ceux qui ne connaissent pas les web-componants, les web-componants permettent la création et la réutilisation de ses propre balises html.&lt;/p&gt;
+
+&lt;p&gt;La spécification Web Components en cours de standardisation au sein du &lt;a target =&quot;_blank&quot; href=&quot;http://www.journaldunet.com/w3c/&quot;&gt;W3C&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Pour plus d’information, je vous laisse regarder la &lt;a target =&quot;_blank&quot; href=&quot;https://www.youtube.com/watch?v=7ObA5u6SxiA&quot;&gt;présentation&lt;/a&gt; faite au &lt;a target =&quot;_blank&quot; href=&quot;http://www.breizhjug.org/&quot;&gt;BreizhJug&lt;/a&gt; par &lt;a target =&quot;_blank&quot; href=&quot;https://twitter.com/LostInBrittany&quot;&gt;Horacio&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;h4&gt;Installation de Polymer&lt;/h4&gt;
+
+&lt;p&gt;La façon la plus simple pour l’installation des Polymer, c’est d’utiliser &lt;a target =&quot;_blank&quot; href=&quot;http://bower.io/&quot; &gt;bower&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pour ceux qui n’auraient pas installer bower, c’est par &lt;a target =&quot;_blank&quot; href=&quot;http://bower.io/#install-bower&quot;&gt;ici&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Si vous n’avez pas encore initialisé bower sur votre projet, vous pouvez le faire avec la commande :&lt;/p&gt;
+
+&lt;code&gt;
+bower init
+&lt;/code&gt;
+
+&lt;p&gt;Pour modifier l’emplacement ou seront installer les packages de bower, il faut ajouter la ligne suivante dans le ficher de configuration .bowerrc :&lt;/p&gt;
+
+&lt;code&gt;
+{
+ &quot;directory&quot;: &quot;src/jbake/assets/components/&quot;
+}
+&lt;/code&gt;
+
+
+&lt;p&gt;Maintenant pour l’installation des polymer, il suffit de lancer la commande :&lt;/p&gt;
+&lt;code&gt;bower install --save Polymer/polymer&lt;/code&gt;
+
+&lt;p&gt;Vous pouvez voir que dans votre configuration bower une dépendance a été ajoutée.&lt;/p&gt;
+
+&lt;pre&gt;
+&lt;code&gt;
+&quot;dependencies&quot;: {
+    &quot;polymer&quot;: &quot;Polymer/polymer#~0.5.5&quot; 
+  }
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h4&gt;Création d’un composant Polymer&lt;/h4&gt;
+
+&lt;p&gt;On crée un fichier myComponents.html qui va contenir l’ensemble de nos composants. On peut également mettre chacun des composants dans son propre fichier html.&lt;/p&gt;
+
+&lt;pre&gt;
+&lt;code&gt;
+&amp;lt;polymer-element name=&quot;blog-tag&quot; attributes=&quot;link tag nb&quot;&amp;gt;
+  &amp;lt;template&amp;gt;
+	&amp;lt;style&gt;&amp;lt;/style&amp;gt;
+	&amp;lt;li&gt;&amp;lt;a href=&quot;{{link}}&quot;&amp;gt;{{tag}}&amp;lt;/a&amp;gt;({{nb}})&amp;lt;/li&amp;gt;
+  &amp;lt;/template&amp;gt;
+  &amp;lt;script&amp;gt;
+    Polymer();
+  &amp;lt;/script&amp;gt;
+&amp;lt;/polymer-element&amp;gt;
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;le style de composant peut être définit à l’intérieur des balises “&lt;code&gt;&amp;lt;style&amp;gt;&amp;lt;/style&amp;gt;&lt;/code&gt;” . Ce style sera appliqué seulement au template et ne sera pas propagé sur le reste du code html.&lt;/p&gt;
+
+
+&lt;h4&gt;Utilisation du composant &lt;/h4&gt;
+
+&lt;p&gt;Maintenant pour utiliser votre composant Polymer, il faut ajouter les bon imports dans les balises “&lt;code&gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/code&gt;”&lt;/p&gt;
+
+&lt;pre&gt;
+&lt;code&gt;
+ 	&amp;lt;!-- Polymer --&amp;gt;
+	 &amp;lt;script src=&quot;components/webcomponentsjs/webcomponents.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+	 &amp;lt;link rel=&quot;import&quot; href=&quot;components/myComponents.html&quot;&amp;gt;
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Il suffit maintenant d’y ajouter notre nouveau composant la ou on souhaite l’afficher.&lt;/p&gt;
+
+&lt;pre&gt;
+&lt;code&gt;
+&amp;lt;blog-tag link=&quot;tags/polymer.html&quot; tag=&quot;Polymer&quot; nb=&quot;1&quot; &amp;gt;&amp;lt;/blog-tag&amp;gt;
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;Vous pouvez retrouver l’exemple dans les &lt;a target =&quot;_blank&quot; href=&quot;https://github.com/sguernion/blog&quot; &gt;sources&lt;/a&gt; du blog. Dans un prochain billet, une utilisation plus poussée des Polymer.&lt;/p&gt;
+
+
+
+	</description>
+    </item>
     <item>
       <title>Pretexto</title>
       <link>http://sguernion.github.io//expositions/2014-09-5-pretexto.html</link>

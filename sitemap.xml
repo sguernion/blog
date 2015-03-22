@@ -2,11 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
         <loc>http://sguernion.github.io//index.html</loc>
-        <lastmod>2015-03-21</lastmod>
+        <lastmod>2015-03-22</lastmod>
     </url>
     <url>
         <loc>http://sguernion.github.io//archive.html</loc>
-        <lastmod>2015-03-21</lastmod>
+        <lastmod>2015-03-22</lastmod>
+    </url>
+
+    <url>
+        <loc>http://sguernion.github.io//tags/jbake.html</loc>
+        
+ 
+        <lastmod>2015-03-22</lastmod>
+    </url>
+
+    <url>
+        <loc>http://sguernion.github.io//tags/web-componants.html</loc>
+        
+ 
+        <lastmod>2015-03-22</lastmod>
     </url>
 
     <url>
@@ -17,10 +31,24 @@
     </url>
 
     <url>
+        <loc>http://sguernion.github.io//tags/Polymer.html</loc>
+        
+ 
+        <lastmod>2015-03-22</lastmod>
+    </url>
+
+    <url>
         <loc>http://sguernion.github.io//tags/Peinture.html</loc>
         
  
         <lastmod>2014-09-05</lastmod>
+    </url>
+
+    <url>
+        <loc>http://sguernion.github.io//tags/bower.html</loc>
+        
+ 
+        <lastmod>2015-03-22</lastmod>
     </url>
 
     <url>
@@ -76,6 +104,11 @@
     <url>
         <loc>http://sguernion.github.io//about.html</loc>
         <lastmod>2014-06-11</lastmod>
+    </url>
+
+    <url>
+        <loc>http://sguernion.github.io//2015/03/polymer.html</loc>
+        <lastmod>2015-03-22</lastmod>
     </url>
 
     <url>

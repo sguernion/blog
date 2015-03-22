@@ -22,12 +22,8 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
     <link rel="shortcut icon" href="favicon.ico">
-	 <link href="font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet">
+    <link href="font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet">
 	
 	
 
@@ -40,6 +36,10 @@
     <script src="/blog/js/prettify.js"></script>
 	<script type="text/javascript" src="/blog/fancy/jquery.fancybox.pack.js?v=2.1.4"></script>
 	 <script type="text/javascript" src="/blog/fancy/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	 
+	 <!-- web components-->
+	 <script src="/blog/components/webcomponentsjs/webcomponents.min.js"></script>
+	 <link rel="import" href="/blog/components/myComponents.html">
   </head>
   <body onload="prettyPrint()">
     <div id="wrap">
@@ -84,6 +84,110 @@
 <div class="row">
 	<div class="col-lg-8">
 		
+			<hr/>	
+				<a href="2015/03/polymer.html"><h1>Polymer</h1></a>		
+				 <p class="post-info">
+					<i class="fa fa-calendar-o"></i>&nbsp;
+					22 March 2015
+					&nbsp;&nbsp;&nbsp;<i class="fa fa-bullhorn"></i>&nbsp;
+					<a href="2015/03/polymer.html#disqus_thread" data-disqus-identifier="2015/03/polymer.html">
+						0 Comments
+					</a>&nbsp;&nbsp; <i class="fa fa-tag"></i>&nbsp; <a href="tags/Polymer.html">Polymer</a>, <a href="tags/jbake.html">jbake</a>, <a href="tags/web-componants.html">web-componants</a>, <a href="tags/bower.html">bower</a>
+					&nbsp;&nbsp;  <!-- \include "share-index.ftl" -->
+									
+				</p>
+				<p>
+<p>Je vais vous présenter une exemple de mise en place de <a target ="_blank" href="https://www.polymer-project.org">Polymer</a> sur un blog construit avec <a href="">jbake</a>.</p>
+
+<h4>Présentation</h4>
+
+<p><a target ="_blank" href="https://www.polymer-project.org">Polymer</a> est une library de Google vous permettant de créer des <a target ="_blank" href="">web-componants</a> fonctionnant sur tous les navigateurs.</p>
+
+<p>Pour ceux qui ne connaissent pas les web-componants, les web-componants permettent la création et la réutilisation de ses propre balises html.</p>
+
+<p>La spécification Web Components en cours de standardisation au sein du <a target ="_blank" href="http://www.journaldunet.com/w3c/">W3C</a>. </p>
+
+<p>Pour plus d’information, je vous laisse regarder la <a target ="_blank" href="https://www.youtube.com/watch?v=7ObA5u6SxiA">présentation</a> faite au <a target ="_blank" href="http://www.breizhjug.org/">BreizhJug</a> par <a target ="_blank" href="https://twitter.com/LostInBrittany">Horacio</a>.</p>
+
+
+<h4>Installation de Polymer</h4>
+
+<p>La façon la plus simple pour l’installation des Polymer, c’est d’utiliser <a target ="_blank" href="http://bower.io/" >bower</a>.</p>
+
+<p>Pour ceux qui n’auraient pas installer bower, c’est par <a target ="_blank" href="http://bower.io/#install-bower">ici</a>.</p>
+
+<p>Si vous n’avez pas encore initialisé bower sur votre projet, vous pouvez le faire avec la commande :</p>
+
+<code>
+bower init
+</code>
+
+<p>Pour modifier l’emplacement ou seront installer les packages de bower, il faut ajouter la ligne suivante dans le ficher de configuration .bowerrc :</p>
+
+<code>
+{
+ "directory": "src/jbake/assets/components/"
+}
+</code>
+
+
+<p>Maintenant pour l’installation des polymer, il suffit de lancer la commande :</p>
+<code>bower install --save Polymer/polymer</code>
+
+<p>Vous pouvez voir que dans votre configuration bower une dépendance a été ajoutée.</p>
+
+<pre>
+<code>
+"dependencies": {
+    "polymer": "Polymer/polymer#~0.5.5" 
+  }
+</code>
+</pre>
+
+<h4>Création d’un composant Polymer</h4>
+
+<p>On crée un fichier myComponents.html qui va contenir l’ensemble de nos composants. On peut également mettre chacun des composants dans son propre fichier html.</p>
+
+<pre>
+<code>
+&lt;polymer-element name="blog-tag" attributes="link tag nb"&gt;
+  &lt;template&gt;
+	&lt;style>&lt;/style&gt;
+	&lt;li>&lt;a href="{{link}}"&gt;{{tag}}&lt;/a&gt;({{nb}})&lt;/li&gt;
+  &lt;/template&gt;
+  &lt;script&gt;
+    Polymer();
+  &lt;/script&gt;
+&lt;/polymer-element&gt;
+</code>
+</pre>
+<p>le style de composant peut être définit à l’intérieur des balises “<code>&lt;style&gt;&lt;/style&gt;</code>” . Ce style sera appliqué seulement au template et ne sera pas propagé sur le reste du code html.</p>
+
+
+<h4>Utilisation du composant </h4>
+
+<p>Maintenant pour utiliser votre composant Polymer, il faut ajouter les bon imports dans les balises “<code>&lt;head&gt;&lt;/head&gt;</code>”</p>
+
+<pre>
+<code>
+ 	&lt;!-- Polymer --&gt;
+	 &lt;script src="components/webcomponentsjs/webcomponents.min.js"&gt;&lt;/script&gt;
+	 &lt;link rel="import" href="components/myComponents.html"&gt;
+</code>
+</pre>
+
+<p>Il suffit maintenant d’y ajouter notre nouveau composant la ou on souhaite l’afficher.</p>
+
+<pre>
+<code>
+&lt;blog-tag link="tags/polymer.html" tag="Polymer" nb="1" &gt;&lt;/blog-tag&gt;
+</code>
+</pre>
+<p>Vous pouvez retrouver l’exemple dans les <a target ="_blank" href="https://github.com/sguernion/blog" >sources</a> du blog. Dans un prochain billet, une utilisation plus poussée des Polymer.</p>
+
+
+</p>
+			
 			<hr/>	
 				<a href="expositions/2014-09-5-pretexto.html"><h1>Pretexto</h1></a>		
 				 <p class="post-info">
@@ -237,57 +341,71 @@ Un peu plus de détails pour l'immeuble au second plan<br />
 	</div>
 <div></div>
 <hr/>
-<div class="block"><h4><a href="liens.html" >Liens</a></h4><hr/>
-<div class="row">
-	<div class="col-lg-8"> 
-		<p><b>Informatique : </b></p>
-		<p>    - <a target="_blank" href="http://www.breizhjug.org/">BreizhJug</a></p>
-		<p>    - <a target="_blank" href="http://www.breizhcamp.org/">BreizhCamp</a></p>
-		<p>    - <a target="_blank" href="http://www.ybonnel.fr/">JustAnOtherDevBlog</a></p>
-	</div>
-	<div class="col-lg-8"> 
-		<p><b>Do It Yourself : </b></p>
-		<p>    - <a target="_blank" href="http://www.lecaribou007.fr/">Enceintes DIY</a></p>
-		<p>    - <a target="_blank" href="http://www.ydle.fr/">Domotique DIY</a></p>
-		<p>    - <a target="_blank" href="http://forum.raspfr.org/">Raspberry Fr</a></p>
-	</div>
-</div>
- 
-<div class="row">
-	<div class="col-lg-8"> 
-		<p><b>Art : </b></p>
-		<p>    - <a target="_blank" href="http://www.ateliermagique.com/fr/">Atelier Magique</a></p>
-		<p>    - <a target="_blank" href="http://www.atelierpretexte.fr/">Atelier Pretexte</a></p>
-		<p>    - <a target="_blank" href="http://ninacharlier.com/">Nina Charlier</a></p>
-	</div>
-	<div class="col-lg-8"> 
-		<p><b>Domotique : </b></p>
-		<p>    - <a target="_blank" href="http://domoticz.com/">Domoticz</a></p>
-		<p>    - <a target="_blank" href="https://github.com/sguernion/myPI">Scripts pour Domoticz</a></p>
-		<p>    - <a target="_blank" href="http://blog.encausse.net/s-a-r-a-h/">S.A.R.A.H</a></p>
-	</div>
-</div>
-</div>
-<hr/>
 <div class="block"><a class="twitter-timeline" href="https://twitter.com/sguernion" data-widget-id="324975968873742336">Tweets de @sguernion</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
 <hr/>
 <div class="block"><h4><a href="tags.html" >Tags</a></h4><hr/>
 <ol class="list-unstyled" style="margin-left: 0px">
                     
-                        <li><a href="tags/Peinture.html">Peinture</a> (2)</li>
+                        <blog-tag link="tags/Peinture.html" tag="Peinture" nb="2" ></blog-tag>
                     
-                        <li><a href="tags/Atelier Pretexte.html">Atelier Pretexte</a> (1)</li>
+                        <blog-tag link="tags/Atelier Pretexte.html" tag="Atelier Pretexte" nb="1" ></blog-tag>
                     
-                        <li><a href="tags/Exposition.html">Exposition</a> (1)</li>
+                        <blog-tag link="tags/bower.html" tag="bower" nb="1" ></blog-tag>
                     
-                        <li><a href="tags/Raspberry.html">Raspberry</a> (1)</li>
+                        <blog-tag link="tags/Exposition.html" tag="Exposition" nb="1" ></blog-tag>
+                    
+                        <blog-tag link="tags/jbake.html" tag="jbake" nb="1" ></blog-tag>
+                    
+                        <blog-tag link="tags/Polymer.html" tag="Polymer" nb="1" ></blog-tag>
+                    
+                        <blog-tag link="tags/Raspberry.html" tag="Raspberry" nb="1" ></blog-tag>
+                    
+                        <blog-tag link="tags/web-componants.html" tag="web-componants" nb="1" ></blog-tag>
                     
                  </ol></div>
 <hr/>
+<div class="block"><h4><a href="liens.html" >Liens</a></h4><hr/>
+<div class="row" style="margin-left: 0px">
+		<blog-links categorie="Jug/GdG" classStyle="col-lg-8">
+			<blog-link link="http://www.breizhjug.org/" label="BreizhJug" description="" ></blog-link>
+			<blog-link link="http://www.breizhcamp.org/" label="BreizhCamp" description="" ></blog-link>
+			<blog-link link="http://finistjug.fr/" label="FinistJug" description="" ></blog-link>
+			<blog-link link="http://www.normandyjug.org/" label="NormandyJug" description="" ></blog-link>
+			<blog-link link="http://www.gdgrennes.org/" label="GDG Rennes" description="" ></blog-link>
+			<blog-link link="http://www.gdgnantes.com/" label="GDG Nantes" description="" ></blog-link>
+		</blog-links>
+		<blog-links categorie="Informatique" classStyle="col-lg-8">
+			<blog-link link="http://www.ybonnel.fr/" label="JustAnOtherDevBlog" description="" ></blog-link>
+			<blog-link link="http://mimah35.blogspot.fr/" label="Dot Java" description="" ></blog-link>
+		</blog-links>
+	<blog-links categorie="DIY" classStyle="col-lg-8">
+		<blog-link link="http://www.lecaribou007.fr/" label="Enceintes DIY" description="" ></blog-link>
+		<blog-link link="http://www.ydle.fr/" label="Domotique DIY" description="" ></blog-link>
+		<blog-link link="http://forum.raspfr.org/" label="Raspberry Fr" description="" ></blog-link>
+	</blog-links>
+	<blog-links categorie="Domotique" classStyle="col-lg-8">
+		<blog-link link="http://domoticz.com/" label="Domoticz" description="" ></blog-link>
+		<blog-link link="https://github.com/sguernion/myPI" label="Scripts pour Domoticz" />
+		<blog-link link="http://blog.encausse.net/s-a-r-a-h/" label="S.A.R.A.H" description="" ></blog-link>
+	</blog-links>
+	<blog-links categorie="Art" classStyle="col-lg-8">
+		<blog-link link="http://www.ateliermagique.com/fr/" label="Atelier Magique" description="" ></blog-link>
+		<blog-link link="http://www.atelierpretexte.fr/" label="Atelier Pretexte" description="" ></blog-link>
+		<blog-link link="http://ninacharlier.com/" label="Nina Charlier" description="" ></blog-link>
+	</blog-links>
+
+</div>
+</div>
+<hr/>
 <div class="block"><h4><a href="archive.html" >Archives</a></h4><hr/>	
-			<h4>September 2014</h4>
+			<h4>March 2015</h4>
 			<ul>
+		
+		<li>22 - <a href="2015/03/polymer.html">Polymer</a></li>
+				</ul>
+				<h4>September 2014</h4>
+				<ul>
 		
 		<li>05 - <a href="expositions/2014-09-5-pretexto.html">Pretexto</a></li>
 				</ul>

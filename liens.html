@@ -21,12 +21,8 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
     <link rel="shortcut icon" href="favicon.ico">
-	 <link href="font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet">
+    <link href="font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet">
 	
 	
 
@@ -39,6 +35,10 @@
     <script src="/blog/js/prettify.js"></script>
 	<script type="text/javascript" src="/blog/fancy/jquery.fancybox.pack.js?v=2.1.4"></script>
 	 <script type="text/javascript" src="/blog/fancy/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	 
+	 <!-- web components-->
+	 <script src="/blog/components/webcomponentsjs/webcomponents.min.js"></script>
+	 <link rel="import" href="/blog/components/myComponents.html">
   </head>
   <body onload="prettyPrint()">
     <div id="wrap">
@@ -83,34 +83,35 @@
 
 
 
-<div class="row">
-	<div class="col-lg-8"> 
-		<p><b>Informatique : </b></p>
-		<p>    - <a target="_blank" href="http://www.breizhjug.org/">BreizhJug</a> - Site du JUG Rennais</p>
-		<p>    - <a target="_blank" href="http://www.breizhcamp.org/">BreizhCamp</a> - Conférence du Breizhcamp</p>
-		<p>    - <a target="_blank" href="http://www.ybonnel.fr/">JustAnOtherDevBlog</a> - Blog de Yan Bonnel</p>
-	</div>
-	<div class="col-lg-8"> 
-		<p><b>Do It Yourself : </b></p>
-		<p>    - <a target="_blank" href="http://www.lecaribou007.fr/">Enceintes DIY</a> - </p>
-		<p>    - <a target="_blank" href="http://www.ydle.fr/">Domotique DIY</a> - Projet domotique DIY</p>
-		<p>    - <a target="_blank" href="http://forum.raspfr.org/">Raspberry Fr</a> - Site de l'association Raspberry France</p>
-	</div>
-</div>
- 
-<div class="row">
-	<div class="col-lg-8"> 
-		<p><b>Art : </b></p>
-		<p>    - <a target="_blank" href="http://www.ateliermagique.com/fr/">Atelier Magique</a> - Site d'artiste</p>
-		<p>    - <a target="_blank" href="http://www.atelierpretexte.fr/">Atelier Pretexte</a> - Site de l'atelier Pretexte</p>
-		<p>    - <a target="_blank" href="http://ninacharlier.com/">Nina Charlier</a> - Site d'une artiste de l'atelier Pretexte</p>
-	</div>
-	<div class="col-lg-8"> 
-		<p><b>Domotique : </b></p>
-		<p>    - <a target="_blank" href="http://domoticz.com/">Domoticz</a> - Serveur Domotique open source</p>
-		<p>    - <a target="_blank" href="https://github.com/sguernion/myPI">Scripts pour Domoticz</a></p>
-		<p>    - <a target="_blank" href="http://blog.encausse.net/s-a-r-a-h/">S.A.R.A.H</a> - Serveur commander par commande vocale</p>
-	</div>
+<div class="row" style="margin-left: 0px">
+		<blog-links categorie="Jug/GdG" classStyle="col-lg-8">
+			<blog-link link="http://www.breizhjug.org/" label="BreizhJug" description=" - Site du JUG Rennais" ></blog-link>
+			<blog-link link="http://www.breizhcamp.org/" label="BreizhCamp" description=" - Site du JUG Rennais" ></blog-link>
+			<blog-link link="http://finistjug.fr/" label="FinistJug" description=" - Site du JUG Brestois" ></blog-link>
+			<blog-link link="http://www.normandyjug.org/" label="NormandyJug" description=" - Site du JUG Normand" ></blog-link>
+			<blog-link link="http://www.gdgrennes.org/" label="GDG Rennes" description=" - Site du gdg Rennes" ></blog-link>
+			<blog-link link="http://www.gdgnantes.com/" label="GDG Nantes" description=" - Site du gdg Nantes" ></blog-link>
+		</blog-links>
+		<blog-links categorie="Informatique" classStyle="col-lg-8">
+			<blog-link link="http://www.ybonnel.fr/" label="JustAnOtherDevBlog" description=" - Blog de Yan Bonnel" ></blog-link>
+			<blog-link link="http://mimah35.blogspot.fr/" label="Dot Java" description=" - Blog de Mimah35" ></blog-link>
+		</blog-links>
+	<blog-links categorie="DIY" classStyle="col-lg-8">
+		<blog-link link="http://www.lecaribou007.fr/" label="Enceintes DIY" description=" - " ></blog-link>
+		<blog-link link="http://www.ydle.fr/" label="Domotique DIY" description=" - Projet domotique DIY" ></blog-link>
+		<blog-link link="http://forum.raspfr.org/" label="Raspberry Fr" description=" - Site de l'association Raspberry France" ></blog-link>
+	</blog-links>
+	<blog-links categorie="Domotique" classStyle="col-lg-8">
+		<blog-link link="http://domoticz.com/" label="Domoticz" description=" - Serveur Domotique open source" ></blog-link>
+		<blog-link link="https://github.com/sguernion/myPI" label="Scripts pour Domoticz" />
+		<blog-link link="http://blog.encausse.net/s-a-r-a-h/" label="S.A.R.A.H" description=" - Serveur commander par commande vocale" ></blog-link>
+	</blog-links>
+	<blog-links categorie="Art" classStyle="col-lg-8">
+		<blog-link link="http://www.ateliermagique.com/fr/" label="Atelier Magique" description=" - Site d'artiste" ></blog-link>
+		<blog-link link="http://www.atelierpretexte.fr/" label="Atelier Pretexte" description=" - Site de l'atelier Pretexte" ></blog-link>
+		<blog-link link="http://ninacharlier.com/" label="Nina Charlier" description=" - " ></blog-link>
+	</blog-links>
+
 </div>
 
 
