@@ -2,7 +2,7 @@
 
 	<%include 'menu.gsp'%>
 
-	<div class="page-header">
+	<div class="page-header headercafe">
 		<h1>Blog Archive</h1>
 	</div>
 

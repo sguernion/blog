@@ -14,17 +14,18 @@
           <ul class="nav navbar-nav">
             <li><a href="/blog/index.html"><i class="fa fa-home"></i> Home</a></li>
 			<li><a href="/blog/expositions/index.html">Galerie</a></li>
-			<li><a href="/blog/projects.html">Projets</a></li>
+			<li><a href="/blog/projects/index.html">Projets</a></li>
 			
             <li><a href="/blog/about.html">About</a></li>
             <li><a href="/blog/${config.feed_file}"><i class="fa fa-rss" alt="Flux RSS"></i></a></li>
           </ul>
+		  
 		  <ul class="nav navbar-nav navbar-right">
-			<li><a href="https://github.com/sguernion"><i class="fa fa-github"></i></a></li>
-			<li><a href="https://twitter.com/sguernion"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="https://plus.google.com/111452422183097276035"><i class="fa fa-google-plus"></i></a></li>
-			<li><a href="https://fr.linkedin.com/in/sguernion/"><i class="fa fa-linkedin"></i></a></li>
-      </ul>
+			<li><a href="https://github.com/${config.github_username}"><i class="fa fa-github"></i></a></li>
+			<li><a href="https://twitter.com/${config.twitter_username}"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://plus.google.com/${config.gplus_username}"><i class="fa fa-google-plus"></i></a></li>
+			<li><a href="https://fr.linkedin.com/in/${config.linkedin_username}/"><i class="fa fa-linkedin"></i></a></li>
+		 </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
