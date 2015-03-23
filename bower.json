@@ -19,6 +19,12 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.5.5"
+    "polymer": "Polymer/polymer#~0.5.5",
+    "bootstrap": "~3.3.4",
+    "fancybox": "~2.1.5",
+    "prettify-min": "~1.0.4",
+    "fontawesome": "~4.3.0",
+    "asciidoctor.js": "~1.5.2",
+    "html5shiv": "~3.7.2"
   }
 }
