@@ -5,7 +5,7 @@
 	<div class="page-header headerbg">
 		<h1>Tag: ${tag}</h1>
 	</div>
-		<p><h2><a href="/tags.html" >Tags</a></h2></p>
+		<p><h2><a href="/blog/tags.html" >Tags</a></h2></p>
 	<!--<ul>-->
 		<%def last_month=null;%>
 		<%tag_posts.each {post ->%>
@@ -20,7 +20,7 @@
 			<ul>
 		<%}%>
 
-		<li>${post.date.format("dd")} - <a href="${post.uri}">${post.title}</a></li>
+		<li>${post.date.format("dd")} - <a href="/blog/${post.uri}">${post.title}</a></li>
 		<% last_month = post.date.format("MMMM yyyy")%>
 		<%}%>
 	</ul>

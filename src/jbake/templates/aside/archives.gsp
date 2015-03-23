@@ -1,4 +1,4 @@
-<h4><a href="${config.archive_file}" >Archives</a></h4><hr/>	
+<a href="${config.archive_file}" ><h4>Archives</h4></a><hr/>	
 <%def last_month=null;%>
 	<%published_posts.each {post ->%>
 		<%if (last_month) {%>

@@ -14,7 +14,7 @@
 					${config.disqus_no_comments}
 				</a>&nbsp;&nbsp; <i class="fa fa-tag"></i>&nbsp; <%
                             out << content.tags.collect { post_tag ->
-                                """<a href="tags/${post_tag}.html">${post_tag}</a>"""
+                                """<a href="/blog/tags/${post_tag}.html">${post_tag}</a>"""
                             } .join(", ")
                         %>
 	 </p>
