@@ -7,3 +7,4 @@ Thumbs.db
 build
 .gradle
 target
+src/jbake/assets/components/**/*
