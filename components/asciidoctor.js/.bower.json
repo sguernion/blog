@@ -56,6 +56,5 @@
   },
   "_source": "git://github.com/asciidoctor/asciidoctor.js.git",
   "_target": "~1.5.2",
-  "_originalSource": "asciidoctor.js",
-  "_direct": true
+  "_originalSource": "asciidoctor.js"
 }
