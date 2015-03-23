@@ -2,7 +2,16 @@
 
 <polymer-element name="blog-link" attributes="link label description">
   <template>
-	<style></style>
+	<style>
+		a{
+			font-weight: bold;
+			color: #5B3F25;
+		}
+		a:link, a:visited, a:active, a:hover{
+		  text-decoration: none;
+		}
+	
+	</style>
 	<p>    - <a target="_blank" href="{{link}}">{{label}}</a>{{description}}</p>
   </template>
   <script>

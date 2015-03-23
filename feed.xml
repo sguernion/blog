@@ -6,8 +6,8 @@
     <atom:link href="http://sguernion.github.io//feed.xml" rel="self" type="application/rss+xml" />
     <description>SGuernion Blog</description>
     <language>fr</language>
-    <pubDate>Mon, 23 Mar 2015 17:21:26 +0000</pubDate>
-    <lastBuildDate>Mon, 23 Mar 2015 17:21:26 +0000</lastBuildDate>
+    <pubDate>Mon, 23 Mar 2015 19:07:58 +0000</pubDate>
+    <lastBuildDate>Mon, 23 Mar 2015 19:07:58 +0000</lastBuildDate>
     
     <item>
       <title>Polymer</title>
@@ -16,11 +16,11 @@
       <guid isPermaLink="false">2015/03/polymer.html</guid>
       <description>
       
-&lt;p&gt;Je vais vous présenter une exemple de mise en place de &lt;a target =&quot;_blank&quot; href=&quot;https://www.polymer-project.org&quot;&gt;Polymer&lt;/a&gt; sur un blog construit avec &lt;a href=&quot;&quot;&gt;jbake&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Je vais vous présenter une exemple de mise en place de &lt;a target =&quot;_blank&quot; href=&quot;https://www.polymer-project.org&quot;&gt;Polymer&lt;/a&gt; sur un blog construit avec &lt;a target =&quot;_blank&quot;  href=&quot;http://jbake.org/&quot;&gt;jbake&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h4&gt;Présentation&lt;/h4&gt;
 
-&lt;p&gt;&lt;a target =&quot;_blank&quot; href=&quot;https://www.polymer-project.org&quot;&gt;Polymer&lt;/a&gt; est une library de Google vous permettant de créer des &lt;a target =&quot;_blank&quot; href=&quot;&quot;&gt;web-componants&lt;/a&gt; fonctionnant sur tous les navigateurs.&lt;/p&gt;
+&lt;p&gt;&lt;a target =&quot;_blank&quot; href=&quot;https://www.polymer-project.org&quot;&gt;Polymer&lt;/a&gt; est une library de Google vous permettant de créer des &lt;a target =&quot;_blank&quot; href=&quot;http://webcomponents.org/&quot;&gt;web-componants&lt;/a&gt; fonctionnant sur tous les navigateurs.&lt;/p&gt;
 
 &lt;p&gt;Pour ceux qui ne connaissent pas les web-componants, les web-componants permettent la création et la réutilisation de ses propre balises html.&lt;/p&gt;
 
@@ -175,8 +175,7 @@ span (font-family: Arial; font-size: 15px; vertical-align: baseline; white-space
 &lt;span&gt;Ayant quelques idées d&apos;utilisations de celle-ci et vu sont coût je me suis décidé à en commander une.&lt;/span&gt;
 &lt;br /&gt;
 &lt;br /&gt;&lt;span&gt;Premier cas d&apos;utilisation, en faire un &quot;Media center&quot;. Dès la réception de la Raspberry, installation de &quot;&lt;a href=&quot;http://www.raspbmc.com/wiki/user/&quot;&gt;RaspBmc&lt;/a&gt;&quot; sur la carte SD. Branchement de la carte sur la télé, tout fonctionne du premier coup, même la télécommande de la télé est reconnue (grâce a la technologie &lt;/span&gt;
-&lt;a href=&quot;http://fr.wikipedia.org/wiki/High-Definition_Multimedia_Interface&quot;&gt;
-&lt;span style=&quot;color: #1155cc; font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;&quot;&gt;HDMI &lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;http://fr.wikipedia.org/wiki/High-Definition_Multimedia_Interface&quot;&gt;HDMI&lt;/a&gt;
 &lt;span&gt;CEC).&lt;/span&gt;
 &lt;br /&gt;
 &lt;br /&gt;&lt;span&gt;Je décide de brancher un disque dur 2.5&quot; auto-alimenté par usb, et là, problème cela fait rebouter la Raspberry. La carte ne semble pas suffisamment puissante pour alimenter les périphériques usb. La solution est passée par hub usb alimenté (D-Link DUB-H7 - 7 ports). &lt;/span&gt;
