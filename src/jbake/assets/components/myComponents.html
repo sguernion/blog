@@ -84,16 +84,30 @@
 			text-decoration: none;
 			color: black;
 		}
+		.card {
+		  padding:1.5rem;
+		  box-shadow:0 1px 2px #aaa;
+		  background:white;
+		  margin:0 1rem 1rem;
+		  border-radius:3px;
+		  user-select:none;
+		  min-height:300px;
+		  animation:fly-in-from-left .5s 1s ease both;
+		  transform-origin:top left;
+		}
+		img{
+			display: block;margin-left: auto;  margin-right: auto;
+		}
 		</style>
-	<div class="col-lg-4">  
-          <div class="thumbnail">  
+	<div class="col-lg-3 card">  
+        
             <img src="{{img}}" style="{{styleImg}}" >  
             <div class="caption">  
               <h5 class="exp-name" >{{expo}}</h5>  
               <p></p>  
-               <p hidden?="{{!link}}"><a target="_blank" href="{{link}}" class="btn btn-success">Voir</a></p>  
+               <p hidden?="{{!link}}" style="display: block;margin-left: auto;  margin-right: auto;"><a target="_blank" href="{{link}}" class="btn btn-success">Voir</a></p>  
             </div>  
-          </div>  
+          
     </div>
   </template>
   <script>
@@ -109,10 +123,62 @@
 			font-weight: bold;
 			color: #C8BCA7;
 		}
+		.card {
+		  padding:1.5rem;
+		  box-shadow:0 1px 2px #aaa;
+		  background:white;
+		  margin:0 1rem 1rem;
+		  border-radius:3px;
+		  user-select:none;
+		  animation:fly-in-from-left .5s 1s ease both;
+		  transform-origin:top left;
+		}
 	
 	</style>
+	<div class="card"> 
 		<p><a target="_blank" href="{{link}}">{{conference}}</a>{{description}}</p>
 		<p><strong>{{date}}</strong></p>
+	</div>
+  </template>
+  <script>
+    Polymer();
+  </script>
+</polymer-element>
+
+
+<polymer-element name="blog-projet" attributes="link label github logo">
+  <template>
+	<link rel="stylesheet" href="/blog/css/bootstrap.min.css">
+	<link href="/blog/components/fontawesome/css/font-awesome.css" rel="stylesheet">
+	<style>
+
+		a{
+			font-weight: bold;
+			color: #5B3F25;
+		}
+		a:link, a:visited, a:active, a:hover{
+		  text-decoration: none;
+		}
+		.card {
+		  padding:1.5rem;
+		  box-shadow:0 1px 2px #aaa;
+		  background:#d5d5d5;
+		  margin:0 1rem 1rem;
+		  border-radius:3px;
+		  user-select:none;
+		  min-height:300px;
+		  animation:fly-in-from-left .5s 1s ease both;
+		  transform-origin:top left;
+		}
+	
+	</style>
+	<div class="col-lg-3 card"> 
+			<img src="{{logo}}" style=" max-width: 150px; max-height: 150px;display: block;margin-left: auto;  margin-right: auto;"/>
+			<br/>
+			<p><a target="_blank" style="text-align: center;" href="{{link}}"><i hidden?="{{!github}}" class="fa fa-github"></i>{{label}}</a></p>
+			<br/>
+			<content></content>
+	</div>
   </template>
   <script>
     Polymer();
