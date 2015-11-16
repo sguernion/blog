@@ -26,6 +26,7 @@
 		<blog-link link="http://www.ateliermagique.com/fr/" label="Atelier Magique" description="<% if (content.links_desc){ %> - Site d'artiste<%}%>" ></blog-link>
 		<blog-link link="http://www.atelierpretexte.fr/" label="Atelier Pretexte" description="<% if (content.links_desc){ %> - Site de l'atelier Pretexte<%}%>" ></blog-link>
 		<blog-link link="http://ninacharlier.com/" label="Nina Charlier" description="<% if (content.links_desc){ %> - <%}%>" ></blog-link>
+		<blog-link link="http://d.beyney.pagesperso-orange.fr/carnets/carnetsV2.htm" label="Les Carnets de Voyages De Daniel Beyney" description="<% if (content.links_desc){ %> - <%}%>" ></blog-link>
 	</blog-links>
 
 </div>
